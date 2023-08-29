@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+/*
+1. A concessionária de veículos “CARANGO VELHO” está vendendo os seus veículos
+com desconto. O desconto é calculado sobre o valor do veículo de acordo com o tipo do
+combustível do veículo (álcool – 25%, gasolina – 21% ou diesel –14%). Escreva um
+programa que leia o valor de venda do veículo, calcule e mostre o valor do desconto e o
+valor final do veículo que será pago pelo cliente.
+
+*/
+int main()
+{
+    //Primeiro passo: declarar as variaveis valorinicial, valorfinal e desconto.
+    float valorinicial, valorfinal, desconto;
+    int tipo;
+    //segundo passo: receber o valor inicial do usuario e armazenar
+    printf("Digite o valor do carro: ");
+    scanf("%f", &valorinicial);
+    /*terceiro passo: receber o tipo do carro do usuário,
+    1 para alcool, 2 para gasosa e 3 para diesel*/
+    printf("Qual o tipo do combustivel do veiculo? Digite 1 para alcool, 2 para gasolina ou 3 para diesel. ");
+    scanf("%d", &tipo);
+    //evitar que o usuario digite um numero diferente de 1,2 ou 3
+    while (tipo != 1 && tipo != 2 && tipo != 3) {
+        printf("Tipo invalido, digite novamente: ");
+        scanf("%d", &tipo);
+    }
+    //calcular e exibir o desconto de acordo com o tipo
+    //álcool – 25%, gasolina – 21% ou diesel –14%
+    if (tipo == 1) {
+        desconto = 0.25 * valorinicial;
+    }
+    if (tipo == 2) {
+        desconto = 0.21 * valorinicial;
+    }
+    if (tipo == 3) {
+        desconto = 0.14 * valorinicial;
+    }
+    valorfinal = valorinicial - desconto;
+    printf("O desconto sobre o carro sera de: %.1f\n", desconto);
+    printf("O carro vai sair por: %.2f", valorfinal);
+
+    //feito :)
+
+    return 0;
+}
