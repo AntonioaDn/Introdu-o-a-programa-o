@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+/*2. Uma empresa decidiu dar uma gratificação de Natal a seus funcionários de acordo com
+o número de horas extras e o número de horas que o funcionário faltou ao trabalho. O
+valor do prêmio é obtido pela consulta à tabela que se segue, em que:
+H = número de horas extras – (2/3 * (número de horas falta));*/
+int main()
+{
+    // declarar as variaveis que serao: horasExtras, horasFalta, H
+    float horasExtras, horasFalta, H;
+    printf("Digite as horas extras do funcionario: ");
+    scanf("%f", &horasExtras);
+    printf("Digite as horas que o funcionario faltou: ");
+    scanf("%f", &horasFalta);
+    H = horasExtras - ((2.0/3) * horasFalta);
+    if (H >= 2400) {
+        printf("A gatificacao sera de: 500.");
+    }
+    if (H >= 1800 && H < 2400) {
+        printf("A gatificacao sera de 400 reais.");
+    }
+    if (H >= 1200 && H < 1800) {
+        printf("A gatificacao sera de 300 reais.");
+    }
+    if (H >= 600 && H < 1200) {
+        printf("A gatificacao sera de 200 reais.");
+    }
+    if (H < 600) {
+        printf("A gatificacao sera de 100 reais.");
+    }
+    return 0;
+}
