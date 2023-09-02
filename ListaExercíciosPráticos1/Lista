@@ -1,0 +1,58 @@
+Lista de exercícios práticos
+
+1.  A concessionária de veículos “CARANGO VELHO” está vendendo os seus veículos
+com desconto. O desconto é calculado sobre o valor do veículo de acordo com o tipo do
+combustível do veículo (álcool – 25%, gasolina – 21% ou diesel –14%). Escreva um
+programa que leia o valor de venda do veículo, calcule e mostre o valor do desconto e o
+valor final do veículo que será pago pelo cliente.
+
+2. Uma empresa decidiu dar uma gratificação de Natal a seus funcionários de acordo com
+o número de horas extras e o número de horas que o funcionário faltou ao trabalho. O
+valor do prêmio é obtido pela consulta à tabela que se segue, em que:
+H = número de horas extras – (2/3 * (número de horas falta));
+Escreva um programa que calcule o valor de H, consulte a tabela e mostre o valor da
+gratificação que o funcionário receberá.
+H (minutos)      Gratificação (R$)
+>= 2400                 500
+2400 > x >= 1800        400
+1800 > x >= 1200        300
+1200 > x >= 600         200
+600 > x                 100
+
+3. Escreva um programa que leia um número inteiro maior que zero e mostre se o número
+é perfeito ou não. Sabe-se que um número é perfeito quando ele é igual à soma dos seus
+divisores (exceto ele mesmo).
+Por exemplo, 6 é perfeito pois 6 = 1+2+3.
+Outros exemplos de números perfeitos: 28, 496 e 8128
+
+4. Uma Loja de Utilidades utiliza o código 1-para vendas a vista e 2-para vendas a prazo.
+Escreva um programa que leia, para cada venda realizada, o código da venda (1 ou 2) e o
+valor da venda. O programa deve calcular e mostrar o valor total das vendas à vista, o
+valor total das vendas a prazo e o valor total das vendas (a vista e a prazo) efetuadas. O
+programa termina quando o código da venda for igual a zero.
+
+5.  Fazer um programa que calcule e mostre o resultado do seguinte somatório:
+S = (2^1)/10 + (2^2)/9 + (2^3)/8 + ... + (2^10)/1
+
+6. Fazer um programa que calcule e mostre o resultado da série abaixo considerando os
+seus 30 primeiros termos. Mostre os 30 termos da sequência como escrita abaixo: 
+480/10 - 475/11 + 470/12 - 465/13 + ...
+
+7. Modifique o exercício anterior para que o usuário informe a quantidade de termos a ser
+calculada.
+
+8. Tem-se um conjunto de dados contendo a altura e o sexo de 15 pessoas. Escreva um
+programa que calcule e mostre:
+  - A maior e a menor altura do grupo;
+  - A média de altura das mulheres;
+  - O número de homens.
+
+9. A Energisa está interessada em um relatório contendo:
+a) Quantidade total de pulsos residenciais consumidos;
+b) Quantidade total de pulsos comerciais consumidos;
+c) O código do assinante que consumiu o maior número de pulsos residenciais;
+d) A média de pulsos comerciais consumidos.
+Escreva um programa que leia os dados dos assinantes (código do assinante, quantidade
+de pulsos consumidos e a categoria: 1- para residencial e 2- para comercial), e gere o
+relatório com as informações desejadas acima. O final do conjunto de assinantes é dado
+por um código de assinante igual a zero
